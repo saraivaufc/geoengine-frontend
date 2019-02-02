@@ -1,0 +1,20 @@
+<app-header [activePage]="'dashboard'"></app-header>
+
+<app-breadcrumb [items]="[
+	['Home', '/'], 
+	['Dashboard', '/dashboard']
+]"></app-breadcrumb>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<app-dashboard-sidebar [activePage]="'dashboard'"></app-dashboard-sidebar>
+		</div>
+
+		<div class="col-md-10">
+
+		</div>
+	</div>
+</div>
+
+<app-footer></app-footer>

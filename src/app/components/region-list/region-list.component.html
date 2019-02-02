@@ -1,0 +1,25 @@
+<div class="container-fluid">
+	<table class="table table-striped">
+	  <thead>
+	    <tr>
+	      <th scope="col">{{ "Code" | translate }}:</th>
+	      <th scope="col">{{ "Start Date" | translate }}</th>
+	      <th scope="col">{{ "Actions" | translate }}</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr *ngFor="let region of regions">
+	      <th scope="row">{{ region.properties.code }}</th>
+	      <td>{{ region.properties.start_date }}</td>
+	      <td>
+	      	<a class="btn btn-outline-primary" [routerLink]="['/dashboard/regions', region.properties.code]">{{ "DETAILS" }}</a>
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+
+<!-- <div class="card-group">
+	<h1 *ngIf="loading">Loading...</h1>
+ 	<app-region-item class="col-4" *ngFor="let region of regions" [region]="region"></app-region-item>
+</div> -->

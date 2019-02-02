@@ -1,0 +1,24 @@
+<app-header [activePage]="'regions'"></app-header>
+
+<app-breadcrumb [items]="[
+	['Home', '/'], 
+	['Dashboard', '/dashboard'], 
+	['Regions', '/dashboard/regions'],
+	[code, ['/dashboard/regions/', code]]
+]"></app-breadcrumb>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<app-dashboard-sidebar [activePage]="'regions'"></app-dashboard-sidebar>
+		</div>
+
+		<div class="col-md-10">
+			<div id="map" class="map" 
+			style="width: 100%; height: 300px;"></div>
+			<app-products-list [code]="code"></app-products-list>
+		</div>
+	</div>
+</div>
+
+<app-footer></app-footer>

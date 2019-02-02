@@ -1,0 +1,50 @@
+<app-header [activePage]="'regions'">
+</app-header>
+
+<app-breadcrumb [items]="[
+	['Home', '/'], 
+	['Dashboard', '/dashboard'], 
+	['Regions', '/dashboard/regions']
+]"></app-breadcrumb>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<app-dashboard-sidebar [activePage]="'regions'"></app-dashboard-sidebar>
+		</div>
+
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-6 order-md-2">
+					<select  class="form-control" [(ngModel)]="typeSelect" (change)="onUpdateType($event)" name="type">
+						<option *ngFor="let type of types" [attr.value]="type.value">{{type.label}}</option>
+					</select>
+					<div id="map" class="map"></div>
+				</div>
+
+				<div class="col-md-6 order-md-1">
+					<form style="width: 100%;">
+						<div class="form-group">
+							<label for="code">{{ "Code" | translate }}:</label>
+							<input type="text" class="form-control" id="code" name="code" placeholder="23K55" [(ngModel)]="region.code">
+						</div>
+
+						<div class="form-group">
+							<label for="start_date">{{ "Start of Monitoring" | translate }}:</label>
+							<input type="text" class="form-control" id="start_date" name="start_date" placeholder="YYYY-MM-DD" [(ngModel)]="region.start_date">
+						</div>
+						<div class="form-group">
+							<label for="geometry">{{ "Geometry" | translate }}:</label>
+							<textarea type="text" class="form-control" id="geometry" name="geometry" [(ngModel)]="region.geometry" width="100%" rows=6></textarea>
+						</div>
+						<div class="text-right">
+							<button class="btn btn-primary" type="submit" (click)="addRegion()">Submit form</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<app-footer></app-footer>

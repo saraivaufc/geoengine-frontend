@@ -1,0 +1,9 @@
+<div class="card-deck mb-3 text-center">
+	<app-plans-item *ngFor="let plan of plans"
+		[title]="plan.title" 
+		[prefix]="'$'"
+		[pricing]="plan.amount" 
+		[period]="plan.period_label" 
+		[features]="plan.features"
+	></app-plans-item>
+</div>

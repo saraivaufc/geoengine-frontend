@@ -1,6 +1,7 @@
 import{Component, OnInit, Input}from '@angular/core';
-import {RegionService}from '../../providers/region.service';
+import {ApiService}from '../../providers/api.service';
 import {timer}from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
 selector: 'app-products-list',
@@ -9,31 +10,32 @@ styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
 
-	@Input() code: string;
+	@Input() id: string;
 	private products: any = new Map();
 	private tags: any = [
-	{label: "Natural Color", value: "NATURAL_COLOR", checked: true},
-	{label: "False Color", value: "FALSE_COLOR", checked: true},
-	{label: "NDVI", value: "NDVI", checked: true},
-	{label: "NDWI", value: "NDWI", checked: true},
-	{label: "DEM", value: "DEM", checked: true},
+		{label: "Natural Color", value: "NATURAL_COLOR", checked: true},
+		{label: "False Color", value: "FALSE_COLOR", checked: true},
+		{label: "NDVI", value: "NDVI", checked: true},
+		{label: "NDWI", value: "NDWI", checked: true},
 	]
 
 	private loading: boolean;
 
-	constructor(private regionService: RegionService) {}
+	constructor(private apiService: ApiService) {}
 
 	ngOnInit() {
 		this.loading = true;
 		timer(0, 15000).subscribe( t => {
-	        this.getProductsByRegion(this.code);
+	        this.getProductsByRegion(this.id);
 	    });
 	}
 
-	public getProductsByRegion(code){
-		let tagsSelected = this.tags.filter(tag => tag.checked);
-		this.regionService.getProductsByRegionAndTags(code, tagsSelected).subscribe(
+	public getProductsByRegion(id){
+		let tagsSelected = this.tags.filter(tag => tag.checked).map(tag => "TAG="+tag.value);
+
+		this.apiService.get(environment.endpoints.products, {"region_pk": id}, tagsSelected).subscribe(
 		  response => {
+		  	console.log(response)
 			this.products = this.groupProducts(response.results.filter(product => product.image !== null));
 			console.log(this.products);
 			this.loading = false;
@@ -65,7 +67,7 @@ export class ProductsListComponent implements OnInit {
 		let indexTagOnList = this.tags.indexOf(tagClicked);
 		tagClicked.checked = event.target.checked
 		this.tags[indexTagOnList] = tagClicked;
-		this.getProductsByRegion(this.code);
+		this.getProductsByRegion(this.id);
 	}
 
 }

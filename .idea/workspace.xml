@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ae86e0a-1fb1-4d73-bf20-4e54190042a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel/carousel.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/carousel/carousel.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/carousel/carousel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/carousel/carousel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/dashboard-sidebar/dashboard-sidebar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/dashboard-sidebar/dashboard-sidebar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/dashboard-sidebar/dashboard-sidebar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/dashboard-sidebar/dashboard-sidebar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/plans-list/plans-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/plans-list/plans-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-create/region-create.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-item/region-item.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-item/region-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-item/region-item.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-item/region-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-list/region-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/region-list/region-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/region-list/region-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/region-list/region-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/region.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/region.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/payments/payments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/payments/payments.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/products/products.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/region-form/region-form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/region-form/region-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/region-form/region-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/region-form/region-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/regions/regions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/regions/regions.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/region.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/region.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/slide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/slide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/slide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/jquery-slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/AssertionError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Collection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/CollectionEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Disposable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Feature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Geolocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ImageBase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ImageCanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ImageState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ImageTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Kinetic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapBrowserEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapBrowserEventHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapBrowserEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapBrowserPointerEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/MapProperty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ObjectEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Observable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Overlay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/OverlayPositioning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/PluggableMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/Tile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/TileCache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/TileQueue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/TileRange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/TileState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/VectorImageTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/VectorTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/View.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ViewHint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ViewProperty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/asserts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/centerconstraint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/colorlike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/Attribution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/Control.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/FullScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/MousePosition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/OverviewMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/Rotate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/ScaleLine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/Zoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/ZoomSlider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/ZoomToExtent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/control/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/coordinate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events/Event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events/EventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events/KeyCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events/Target.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/events/condition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/extent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/extent/Corner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/extent/Relationship.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/featureloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/EsriJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/Feature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/FormatType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GML2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GML3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GML32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GMLBase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GPX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/GeoJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/IGC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/JSONFeature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/KML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/MVT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/OSMXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/OWS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/Polyline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/TextFeature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/TopoJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/WFS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/WKT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/WMSCapabilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/WMSGetFeatureInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/WMTSCapabilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/XLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/XML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/XMLFeature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/And.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Bbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Comparison.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/ComparisonBinary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Contains.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/During.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/EqualTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/GreaterThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/GreaterThanOrEqualTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Intersects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/IsBetween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/IsLike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/IsNull.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/LessThan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/LessThanOrEqualTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/LogicalNary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Not.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/NotEqualTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Or.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Spatial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/filter/Within.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/format/xsd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/Circle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/Geometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/GeometryCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/GeometryLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/GeometryType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/LineString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/LinearRing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/MultiLineString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/MultiPoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/MultiPolygon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/Point.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/Polygon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/SimpleGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/center.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/closest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/contains.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/deflate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/flip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/geodesic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/inflate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/interiorpoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/interpolate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/intersectsextent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/length.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/orient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/reverse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/segments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/simplify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/straightchunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/textpath.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/topology.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/geom/flat/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/has.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DoubleClickZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragAndDrop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragPan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragRotate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragRotateAndZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/DragZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Draw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Extent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Interaction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/KeyboardPan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/KeyboardZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Modify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/MouseWheelZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/PinchRotate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/PinchZoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Pointer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Property.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Snap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/interaction/Translate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/BaseImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/BaseTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/BaseVector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Graticule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Group.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Property.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Tile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/TileProperty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/Vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/VectorImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/VectorTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/layer/VectorTileRenderType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/loadingstrategy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/math.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/net.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/obj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/ol.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pixel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/EventSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/EventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/MouseSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/MsSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/NativeSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/PointerEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/PointerEventHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/pointer/TouchSource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/Projection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/Units.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/epsg3857.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/epsg4326.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/proj4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/projections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/proj/transforms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/Box.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/Event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/EventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/Feature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/VectorContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/Builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/BuilderGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/BuilderType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/Executor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/ExecutorGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/ImageBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/Immediate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/Instruction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/LineStringBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/PolygonBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/canvas/TextBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/render/webgl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/Composite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/Layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/Map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/ImageLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/Layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/TileLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/VectorImageLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/VectorLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/canvas/VectorTileLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/renderer/webgl/PointsLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/reproj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/reproj/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/reproj/Tile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/reproj/Triangulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/reproj/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/resolutionconstraint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/rotationconstraint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/BingMaps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/CartoDB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Cluster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/ImageArcGISRest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/ImageCanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/ImageMapGuide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/ImageStatic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/ImageWMS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/OSM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Raster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Stamen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/State.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Tile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileArcGISRest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileDebug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/TileWMS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/UTFGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/UrlTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/VectorEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/VectorTile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/WMSServerType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/WMTS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/WMTSRequestEncoding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/XYZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/Zoomify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/source/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/sphere.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/structs/LRUCache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/structs/LinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/structs/PriorityQueue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/structs/RBush.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Circle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Fill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Icon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/IconAnchorUnits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/IconImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/IconImageCache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/IconOrigin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/RegularShape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Stroke.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/Text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/style/TextPlacement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tilecoord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tilegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tilegrid/TileGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tilegrid/WMTS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tilegrid/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/tileurlfunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/vec/mat4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl/Buffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl/ContextEventType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl/Helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl/PostProcessingPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/webgl/Shader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ol/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/map/map.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#site#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#site#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="n#!!block;n#site-e2e#0;n#!!block;n#projects#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/carousel/carousel.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#62#0" expanded="true" />
+                <element signature="e#243#314#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>geometry</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/components/map/map.component.ts" />
+        <option value="$PROJECT_DIR$/angular.json" />
+        <option value="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/carousel/carousel.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/geoengine-frontend.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1992" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1849" />
+    <option name="height" value="1089" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="carousel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geoengine-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geoengine-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/src/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ae86e0a-1fb1-4d73-bf20-4e54190042a5" name="Default Changelist" comment="" />
+      <created>1555875520161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555875520161</updated>
+      <workItem from="1555875525338" duration="351000" />
+      <workItem from="1555875933123" duration="2877000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3228000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="72" y="-1088" width="1849" height="1089" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/components/map/map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#site#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#site#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#site-e2e#0;n#!!block;n#projects#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/carousel-item/carousel-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/carousel/carousel.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#243#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

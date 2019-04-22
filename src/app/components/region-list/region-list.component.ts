@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RegionService } from '../../providers/region.service';
+import { ApiService } from '../../providers/api.service';
 import { timer } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-region-list',
@@ -12,7 +13,9 @@ export class RegionListComponent implements OnInit {
   private regions: Array<object> = [];
   private loading: boolean;
 
-  constructor(private regionService: RegionService) {}
+  constructor(
+    private apiService: ApiService
+  ) {}
 
   ngOnInit() {
     timer(0, 15000).subscribe( t => {
@@ -23,9 +26,10 @@ export class RegionListComponent implements OnInit {
 
   public getRegions(){
     this.loading = true;
-
-    this.regionService.getRegions().subscribe(
+    let params = {}
+    this.apiService.get(environment.endpoints.regions, {}, params).subscribe(
       response => {
+        console.log(response.results)
         this.regions = response.results.features;
         this.loading = false;
       },
@@ -33,6 +37,10 @@ export class RegionListComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  public deleteRegion(code){
+    window.alert(code)
   }
 
 }

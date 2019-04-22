@@ -18,12 +18,19 @@
 <div class="accordion" id="accordionExample">
 	<h1 *ngIf="loading">Loading...</h1>
 	<div class="card" *ngFor="let recipient of products | keyvalue">
-		<div class="card-header" id="headingOne">
-		  <h6 class="mb-0">
-		  	<span class="font-weight-bold">PRODUCT:</span> {{ recipient.key }}
-		  	<span class="font-weight-bold">DATE ACQUIRED:</span> {{ recipient.value[0].image.date_acquired }}
-		  	<span class="font-weight-bold">CLOUD COVER:</span> {{ recipient.value[0].image.cloud_cover }}%
-		  </h6>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-2 w-100  bg-primary">
+					<button type="button" class="btn btn-info">
+						<i class="fa fa-calendar-alt"></i>
+						{{ recipient.value[0].image.date_acquired }}
+					</button>
+					<button type="button" class="btn btn-warning">
+						<i class="fa fa-cloud"></i>
+						{{ recipient.value[0].image.cloud_cover }}%
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">

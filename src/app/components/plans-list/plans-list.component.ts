@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PaymentService } from '../../providers/payment.service';
+import { environment } from 'src/environments/environment';
+import { ApiService } from '../../providers/api.service';
 
 @Component({
   selector: 'app-plans-list',
@@ -10,7 +11,7 @@ export class PlansListComponent implements OnInit {
 	private plans: Array<object> = [];
 	private loading: boolean;
 
-	constructor(private paymentService: PaymentService) { }
+	constructor(private apiService: ApiService) { }
 
 	ngOnInit() {
 		this.getPlans();
@@ -18,8 +19,7 @@ export class PlansListComponent implements OnInit {
 
 	public getPlans(){
 	    this.loading = true;
-
-	  	this.paymentService.getPlans().subscribe(
+	  	this.apiService.get(environment.endpoints.plans, {}, {}).subscribe(
 	      response => {
 	        this.plans = response.results;
 	        this.loading = false;

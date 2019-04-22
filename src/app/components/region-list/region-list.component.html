@@ -1,25 +1,32 @@
 <div class="container-fluid">
 	<table class="table table-striped">
 	  <thead>
-	    <tr>
-	      <th scope="col">{{ "Code" | translate }}:</th>
-	      <th scope="col">{{ "Start Date" | translate }}</th>
-	      <th scope="col">{{ "Actions" | translate }}</th>
-	    </tr>
+		<tr>
+		  <th scope="col">{{ "ID" | translate }}:</th>
+		  <th scope="col">{{ "Crop tye" | translate }}</th>
+		  <th scope="col">{{ "Planting date" | translate }}</th>
+		  <th scope="col">{{ "Harvest date" | translate }}</th>
+		  <th scope="col">{{ "Actions" | translate }}</th>
+		</tr>
 	  </thead>
 	  <tbody>
-	    <tr *ngFor="let region of regions">
-	      <th scope="row">{{ region.properties.code }}</th>
-	      <td>{{ region.properties.start_date }}</td>
-	      <td>
-	      	<a class="btn btn-outline-primary" [routerLink]="['/dashboard/regions', region.properties.code]">{{ "DETAILS" }}</a>
-	      </td>
-	    </tr>
+		<tr *ngFor="let region of regions">
+		  <th scope="row">{{ region.id }}</th>
+		  <td>{{ region.properties.crop_type }}</td>
+		  <td>{{ region.properties.planting_date }}</td>
+		  <td>{{ region.properties.harvest_date }}</td>
+		  <td>
+			<a class="btn btn-outline-primary" [routerLink]="['/dashboard/regions', region.id]">
+				<i class="fa fa-eye"></i>
+			</a>
+			<a class="btn btn-outline-info" [routerLink]="['/dashboard/edit-region', region.id]">
+				<i class="fa fa-edit"></i>
+			</a>
+			<a class="btn btn-outline-danger" (click)="deleteRegion(region.id)">
+				<i class="fa fa-trash"></i>
+			</a>
+		  </td>
+		</tr>
 	  </tbody>
 	</table>
 </div>
-
-<!-- <div class="card-group">
-	<h1 *ngIf="loading">Loading...</h1>
- 	<app-region-item class="col-4" *ngFor="let region of regions" [region]="region"></app-region-item>
-</div> -->

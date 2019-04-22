@@ -1,3 +1,6 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ol/ol.css';
+
 /* You can add global styles to this file, and also import other style files */
 .text-primary{
 	color: #4c2a80 !important;

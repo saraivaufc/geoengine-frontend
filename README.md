@@ -1,5 +1,7 @@
 # Site
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/852db4668cc442ff9094e5b8acfe8afb)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saraivaufc/geoengine-frontend&amp;utm_campaign=Badge_Grade)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
 ## Install Node

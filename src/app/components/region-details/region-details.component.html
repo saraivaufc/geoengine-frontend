@@ -1,9 +1,20 @@
 <div class="card mb-3 w-100">
 	<div class="row no-gutters">
 		<div class="col-md-4">
-			<div id="map" class="map card-img" style="width: 100%; height: 300px;"></div>
+			<div id="map-{{id}}" class="map card-img" style="width: 100%; height: 300px;"></div>
 		</div>
 		<div class="col-md-8">
+			<div class="float-right">
+				<a class="btn btn-outline-primary" [routerLink]="['/dashboard/regions', id]">
+					<i class="fa fa-eye"></i>
+				</a>
+				<a class="btn btn-outline-info" [routerLink]="['/dashboard/edit-region', id]">
+					<i class="fa fa-edit"></i>
+				</a>
+				<a class="btn btn-outline-danger" (click)="deleteRegion(id)">
+					<i class="fa fa-trash"></i>
+				</a>
+			</div>
 			<div class="card-body">
 				<div class="table-responsive">
 					<table class="table">
@@ -12,35 +23,38 @@
 								<td class="text-primary">
 									<i class="fa fa-barcode"></i> {{ "ID:" | translate }}
 								</td>
-								<td>{{ region.id }}</td>
+								<td>{{ region?.id }}</td>
 							</tr>
 							<tr>
 								<td class="text-primary">
 									<i class="fa fa-leaf"></i> {{ "Type of culture:" | translate }}
 								</td>
-								<td>{{ region.properties.crop_type }}</td>
+								<td>{{ region?.properties.crop_type }}</td>
 							</tr>
 							<tr>
 								<td class="text-primary">
 									<i class="fa fa-seedling"></i> {{ "Planting date:" | translate }}
 								</td>
-								<td>{{ region.properties.planting_date }}</td>
+								<td>{{ region?.properties.planting_date }}</td>
 							</tr>
 							<tr>
 								<td class="text-primary">
 									<i class="fa fa-tractor"></i> {{ "Haverest date:" | translate }}
 								</td>
-								<td>{{ region.properties.harvest_date }}</td>
+								<td>{{ region?.properties.harvest_date }}</td>
 							</tr>
 							<tr>
 								<td class="text-primary">
 									<i class="fa fa-calendar"></i> {{ "Creation date:" | translate }}
 								</td>
-								<td>{{ region.properties.created }}</td>
+								<td>{{ region?.properties.created }}</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
+<!--				<a class="btn btn-outline-primary" [routerLink]="['/dashboard/regions', region.id]">-->
+<!--					<i class="fa fa-eye"></i>-->
+<!--				</a>-->
 			</div>
 		</div>
 	</div>

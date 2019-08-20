@@ -1,6 +1,6 @@
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-		<a class="navbar-brand" [routerLink]="'/'">GeoEngine</a>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" [routerLink]="'/'">GeeoLabs</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -11,19 +11,14 @@
 						{{ "Home" | translate }}<span class="sr-only">(current)</span>
 					</a>
 				</li>
+			</ul>
+			<div class="d-flex flex-row-reverse bd-highlight">
+			<ul class="navbar-nav mr-auto ">
 				<li class="nav-item" [class.active]="activePage === 'dashboard' ">
 					<a class="nav-link" [routerLink]="'/dashboard'">
 						{{ "Dashboard" | translate }}
 					</a>
 				</li>
-				<li class="nav-item" [class.active]="activePage === 'pricing'">
-					<a class="nav-link" [routerLink]="'/pricing'">
-						{{ "Our Plans" | translate }}
-					</a>
-				</li>
-			</ul>
-			<div class="d-flex flex-row-reverse bd-highlight">
-			<ul class="navbar-nav mr-auto ">
 				<li class="nav-item" [class.active]="activePage === 'sign-up' ">
 					<a class="nav-link" [routerLink]="'/sign-up'">
 						Sign up

@@ -1,32 +1,26 @@
-import {Component, EventEmitter, Input, OnInit, Output, OnChanges} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import Map from 'ol/Map.js';
 import View from 'ol/View.js';
-import {Tile, Vector as VectorLayer} from 'ol/layer.js';
-import {Vector as VectorSource, XYZ} from 'ol/source.js';
-import {Circle, Fill, Stroke, Style} from 'ol/style.js';
 import {GeoJSON, WKT} from 'ol/format.js';
-import {Draw, Modify} from 'ol/interaction.js';
+import * as ole from '../ole/index.js';
+
+declare var ol: any;
 
 @Component({
     selector: 'app-map',
     templateUrl: './map.component.html',
-    styleUrls: ['./map.component.css']
+    styleUrls: [
+        './map.component.css',
+        '../ole/style/ole.css'
+    ],
+    encapsulation: ViewEncapsulation.None,
 })
 export class MapComponent implements OnInit, OnChanges {
-    currentInput;
-
     @Input() inputField;
     @Output() outputField = new EventEmitter();
 
-    private types: Array<object> = [
-        {label: 'Point', value: 'Point'},
-        {label: 'LineString', value: 'LineString'},
-        {label: 'Polygon', value: 'Polygon'},
-        {label: 'Circle', value: 'Circle'}
-    ];
-    private typeSelect = 'Polygon';
     private map: any;
-    private raster: any;
+    private editLayer: any;
     private source: any;
     private vector: any;
     private draw: any;
@@ -36,69 +30,141 @@ export class MapComponent implements OnInit, OnChanges {
     }
 
     ngOnInit() {
-        this.raster = new Tile({
-            source: new XYZ({
-                url: 'http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}'
-            })
-        });
+        this.source = new ol.source.Vector();
 
-        this.source = new VectorSource();
-
-        this.vector = new VectorLayer({
+        this.editLayer = new ol.layer.Vector({
             source: this.source,
-            style: new Style({
-                fill: new Fill({
-                    color: 'rgba(255, 255, 255, 0.2)'
-                }),
-                stroke: new Stroke({
-                    color: '#ffcc33',
-                    width: 2
-                }),
-                image: new Circle({
-                    radius: 7,
-                    fill: new Fill({
-                        color: '#ffcc33'
-                    })
-                })
-            })
         });
-
-
-        let map_target = 'map';
-        let map_center = [-5601471, -1525532];
-        let map_zoom = 4;
 
         this.map = new Map({
-            layers: [this.raster, this.vector],
-            target: map_target,
+            layers: [
+                new ol.layer.Tile({
+                    title: 'OpenStreetMap',
+                    type: 'base',
+                    source: new ol.source.TileImage({
+                        url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    })
+                }),
+                new ol.layer.Tile({
+                    title: 'Google Satellite',
+                    visible: false,
+                    source: new ol.source.TileImage({
+                        url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+                    })
+                }),
+                new ol.layer.Tile({
+                    title: 'Google Hybrid',
+                    visible: true,
+                    source: new ol.source.TileImage({
+                        url: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+                    })
+                }),
+                this.editLayer
+            ],
+            target: 'map',
             view: new View({
-                center: map_center,
-                zoom: map_zoom,
+                center: [-5601471, -1525532],
+                zoom: 4,
             })
         });
 
-        var modify = new Modify({source: this.source});
+        // Create a LayerSwitcher instance and add it to the map
+        const layerSwitcher = new ol.control.LayerSwitcher();
 
-        this.map.addInteraction(modify);
+        this.map.addControl(layerSwitcher);
 
-        this.addInteractions();
+        const editor = new ole.Editor(this.map);
+
+        const cad = new ole.control.CAD({
+            source: this.editLayer.getSource()
+        });
+
+        const draw = new ole.control.Draw({
+            source: this.editLayer.getSource()
+        });
+
+        const drawLine = new ole.control.Draw({
+            type: 'LineString',
+            source: this.editLayer.getSource()
+        });
+
+        const rotate = new ole.control.Rotate({
+            source: this.editLayer.getSource()
+        });
+
+        const drawPoly = new ole.control.Draw({
+            type: 'Polygon',
+            source: this.editLayer.getSource()
+        });
+
+        const move = new ole.control.Move({
+            type: 'Polygon',
+            source: this.editLayer.getSource()
+        });
+        const fill = new ol.style.Fill({
+            color: 'rgba(255,255,255,0.4)'
+        });
+
+        const stroke = new ol.style.Stroke({
+            color: '#3399CC',
+            width: 1.25
+        });
+        const style = new ol.style.Style({
+            image: new ol.style.Circle({
+                fill: fill,
+                stroke: stroke,
+                radius: 5
+            }),
+            fill: fill,
+            stroke: stroke
+        });
+
+        const modify = new ole.control.Modify({
+            source: this.editLayer.getSource(),
+            style: style
+        });
+
+        const deleteC = new ole.control.Delete({
+            source: this.editLayer.getSource()
+        });
+
+        const buffer = new ole.control.Buffer({
+            source: this.editLayer.getSource()
+        });
+
+        const union = new ole.control.Union({
+            source: this.editLayer.getSource()
+        });
+
+        const intersection = new ole.control.Intersection({
+            source: this.editLayer.getSource()
+        });
+
+        const difference = new ole.control.Difference({
+            source: this.editLayer.getSource()
+        });
+
+        editor.addControls([
+            cad,
+            draw,
+            drawLine,
+            drawPoly,
+            modify,
+            move,
+            rotate,
+            deleteC,
+            buffer,
+            union,
+            intersection,
+            difference
+        ]);
+
+        const ls = new ole.service.LocalStorage();
+
+        editor.addService(ls);
 
         this.source.on('addfeature', (event) => {
             let feature = event.feature;
-
-            // geometry.transform("EPSG:3857", "EPSG:4326");
-
-            // if(geometry.getType() === "Circle"){
-            // 	let center = geometry.getCenter()
-            // 	let radius = geometry.getRadius()
-            // 	let edgeCoordinate = [center[0] + radius, center[1]];
-            // 	let wgs84Sphere = new ol.Sphere(6378137);
-            // 	let groundRadius = wgs84Sphere.haversineDistance(
-            // 		ol.proj.transform(center, 'EPSG:3857', 'EPSG:4326'),
-            // 		ol.proj.transform(edgeCoordinate, 'EPSG:3857', 'EPSG:4326')
-            // 	);
-            // 	geometry = ol.geom.Polygon.circular(new ol.Sphere(6378137), geometry.getCenter(), groundRadius)
-            // }
 
             let format = new WKT();
 
@@ -161,43 +227,12 @@ export class MapComponent implements OnInit, OnChanges {
 
             console.log(feature);
 
-            let map_center = this.getCenterOfExtent(feature.getGeometry().getExtent());
+            const center = this.getCenterOfExtent(feature.getGeometry().getExtent());
 
             this.source.addFeatures([feature]);
 
-            //ol.proj.transform(map_center, 'EPSG:4326', 'EPSG:3857')
-
-            this.map.getView().setCenter(map_center);
+            this.map.getView().setCenter(center);
             this.map.getView().setZoom(13);
-        }
-    }
-
-    onUpdateType(event) {
-        this.typeSelect = event.target.value;
-        this.map.removeInteraction(this.draw);
-        this.map.removeInteraction(this.snap);
-        this.addInteractions();
-    }
-
-    addInteractions() {
-        let value = this.typeSelect;
-        if (value !== 'None') {
-            let geometryFunction;
-            if (value === 'Square') {
-                value = 'Circle';
-                geometryFunction = Draw.createRegularPolygon(4);
-            } else if (value === 'Box') {
-                value = 'Circle';
-                geometryFunction = Draw.createBox();
-            }
-
-            this.draw = new Draw({
-                source: this.source,
-                type: value,
-                geometryFunction: geometryFunction
-            });
-
-            this.map.addInteraction(this.draw);
         }
     }
 

@@ -1,24 +1,25 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import '~ol/ol.css';
+*{
+	font-family: "Lato", sans-serif;
+}
 
 /* You can add global styles to this file, and also import other style files */
 .text-primary{
-	color: #4c2a80 !important;
+	color: #0b8000 !important;
 }
 
 .bg-primary{
-	background-color: #4c2a80 !important;
+	background-color: #0b8000 !important;
 }
 
 .btn-outline-primary{
-	border-color: #4c2a80;
-	color: #4c2a80;
+	border-color: #0b8000;
+	color: #0b8000;
 }
 
 .btn-outline-primary:hover{
-	background-color: #4c2a80;
+	background-color: #0b8000;
 }
 
 a{
-    color: #4c2a80;
+    color: #0b8000;
 }

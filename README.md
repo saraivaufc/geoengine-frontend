@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
+## Install Node
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash
+
+sudo apt-get install -y nodejs
+
+## Install NPM
+
+sudo apt-get install npm
+
+## Install Angular
+
+sudo npm install -g @angular/cli
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

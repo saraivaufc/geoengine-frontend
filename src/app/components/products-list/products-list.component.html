@@ -17,17 +17,17 @@
 
 <div class="accordion" id="accordionExample">
 	<h1 *ngIf="loading">Loading...</h1>
-	<div class="card" *ngFor="let recipient of products | keyvalue">
+	<div class="card" *ngFor="let product of products | keyvalue">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p-2 w-100  bg-primary">
 					<button type="button" class="btn btn-info">
 						<i class="fa fa-calendar-alt"></i>
-						{{ recipient.value[0].image.date_acquired }}
+						{{ product.value[0].image.date_acquired }}
 					</button>
 					<button type="button" class="btn btn-warning">
 						<i class="fa fa-cloud"></i>
-						{{ recipient.value[0].image.cloud_cover }}%
+						{{ product.value[0].image.cloud_cover }}%
 					</button>
 				</div>
 			</div>
@@ -38,7 +38,7 @@
 		  	<div class="row">
 		  		<app-products-item class="m-0 p-0" 
 		  		[ngClass]="'col-md-' + (12 / getSelectedTags().length)" 
-		  		*ngFor="let product of recipient.value" 
+		  		*ngFor="let product of product.value"
 		  		[product]="product"></app-products-item>
 		  	</div>
 		  </div>

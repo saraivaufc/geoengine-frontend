@@ -11,5 +11,7 @@ export const environment = {
         regions: 'monitor:regions_create_list',
         regions_details: 'monitor:regions_retrieve_update_destroy',
         products: 'monitor:products_list',
+        tasks: 'services:tasks_list',
+        tasks_details: 'services:tasks_details'
     },
 };

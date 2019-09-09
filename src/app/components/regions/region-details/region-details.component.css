@@ -1,0 +1,8 @@
+.table td, .table .th:first-child {
+    border-top: 1px solid #dee2e600 !important;
+}
+
+.btn-options{
+    position: absolute;
+    right: 20px;
+}

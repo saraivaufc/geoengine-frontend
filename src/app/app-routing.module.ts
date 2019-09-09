@@ -1,18 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { PrivacyComponent } from './pages/privacy/privacy.component';
-import { TermsComponent } from './pages/terms/terms.component';
+import {HomeComponent} from './components/home/home.component';
+import {AboutComponent} from './components/about/about.component';
+import {PrivacyComponent} from './components/privacy/privacy.component';
+import {TermsComponent} from './components/terms/terms.component';
 
-import { SignUpComponent } from './pages/sign-up/sign-up.component';
-
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { RegionsComponent } from './pages/dashboard/regions/regions.component';
-import { PageRegionFormComponent } from './pages/dashboard/page-region-form/page-region-form.component';
-
-import { ProductsComponent } from './pages/dashboard/products/products.component';
+import {SignUpComponent} from './components/sign-up/sign-up.component';
+import {RegionListComponent} from './components/regions/region-list/region-list.component';
+import {RegionFormComponent} from './components/regions/region-form/region-form.component';
+import {RegionViewComponent} from './components/regions/region-view/region-view.component';
 
 const routes: Routes = [
     {path​: ''​, component​: HomeComponent},
@@ -20,11 +17,10 @@ const routes: Routes = [
     {path​: 'terms'​, component​: TermsComponent},
     {path: 'about'​, component​: AboutComponent},
     {path: 'sign-up', component: SignUpComponent},
-    {path​: 'dashboard'​, component​: DashboardComponent},
-    {path​: 'dashboard/regions'​, component​: RegionsComponent},
-    {path: 'dashboard/regions/:id', component: ProductsComponent},
-    {path: 'dashboard/add-region', component: PageRegionFormComponent},
-    {path: 'dashboard/edit-region/:id', component: PageRegionFormComponent},
+    {path​: 'regions'​, component​: RegionListComponent},
+    {path: 'regions/:id', component: RegionViewComponent},
+    {path: 'add-region', component: RegionFormComponent},
+    {path: 'edit-region/:id', component: RegionFormComponent},
 ];
 
 @NgModule({

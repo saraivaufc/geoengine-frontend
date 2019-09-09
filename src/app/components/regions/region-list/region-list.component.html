@@ -1,0 +1,30 @@
+<app-header [activePage]="'regions'">
+</app-header>
+
+<app-breadcrumb [items]="[
+	['Home', '/'],
+	['Regions', '/regions']
+]"></app-breadcrumb>
+
+<div class="container-fluid">
+    <a href="/add-region" class="btn btn-primary">
+        <i class="fa fa-plus"></i>
+        New Region
+    </a>
+</div>
+
+<div *ngIf="regions.length > 0">
+    <div class="card-group">
+        <div class="col-md-6" *ngFor="let region of regions">
+            <app-region-details [id]="region.id"></app-region-details>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="regions.length === 0">
+    <div>
+        sdsd
+    </div>
+</div>
+
+<app-footer></app-footer>

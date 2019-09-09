@@ -1,0 +1,17 @@
+<div class="card h-100 w-100">
+    <div class="card-header" [textContent]="'CROP HISTORY' | translate"></div>
+    <div class="card-body">
+        <div class="d-inline-flex">
+            <div style="width: 170px;">
+                <input class="form-control" type="date" [(ngModel)]="startDate" (change)="loadTimeSeries()"/>
+            </div>
+            <div style="width: 170px;">
+                <input class="form-control" type="date" [(ngModel)]="endDate" (change)="loadTimeSeries()"/>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h1 class="text-center" *ngIf="!chartLoaded">Loading chart...</h1>
+            <div id="chart" class="w-100" style="height: 300px;"></div>
+        </div>
+    </div>
+</div>

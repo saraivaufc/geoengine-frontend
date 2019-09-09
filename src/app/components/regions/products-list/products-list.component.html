@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header">IMAGES</div>
+    <div class="card-body">
+
+        <div class="container-fluid mb-3">
+            <div class="row">
+                <div class="custom-control custom-switch custom-control-inline" *ngFor="let tag of tags">
+                    <input type="checkbox" class="custom-control-input"
+                           id="{{ tag.value }}"
+                           name="{{ tag.value }}"
+                           [checked]="tag.checked"
+                           (change)="updateTags($event)">
+                    <label class="custom-control-label" for="{{ tag.value }}">
+                        {{ tag.label }}
+                    </label>
+                </div>
+            </div>
+        </div>
+
+<!--        <br>-->
+
+
+        <div class="accordion" id="accordionExample">
+            <h1 *ngIf="loading">Loading...</h1>
+            <div class="scrollmenu">
+                <div class="item" *ngFor="let group of products | keyvalue">
+                    <div  *ngFor="let product of group.value">
+                        <button type="button" class="btn btn-info">
+                            <i class="fa fa-calendar-alt"></i>
+                            {{ product.image.date_acquired  }}
+                        </button>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fa fa-satellite"></i>
+                            {{ product.image.satellite.code  }}
+                        </button>
+                        <app-products-item class="m-0 p-0" *ngIf="product['NATURAL_COLOR']" [product]="product['NATURAL_COLOR']"></app-products-item>
+                        <app-products-item class="m-0 p-0" *ngIf="product['FALSE_COLOR']" [product]="product['FALSE_COLOR']"></app-products-item>
+                        <app-products-item class="m-0 p-0" *ngIf="product['NDVI']" [product]="product['NDVI']"></app-products-item>
+                        <app-products-item class="m-0 p-0" *ngIf="product['NDWI']" [product]="product['NDWI']"></app-products-item>
+                        <app-products-item class="m-0 p-0" *ngIf="product['SURFACE_TEMPERATURE']" [product]="product['SURFACE_TEMPERATURE']"></app-products-item>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

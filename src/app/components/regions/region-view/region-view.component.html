@@ -1,0 +1,38 @@
+<app-header [activePage]="'regions'">
+</app-header>
+
+<app-breadcrumb [items]="[
+	['Home', '/'],
+	['Regions', '/regions'],
+	['#'+id, '/regions/'+id]
+]"></app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <app-region-details [id]="id"></app-region-details>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-7">
+            <app-region-timeseries [id]="id"
+                                   class="w-100"
+                                   style="height: 200px; max-height: 200px !important;"></app-region-timeseries>
+        </div>
+        <div class="col-md-5">
+            <app-region-weath-forecast [lat]="centroid[1]"
+                                       [lon]="centroid[0]"
+                                       class="w-100"
+                                       style="height: 300px;"></app-region-weath-forecast>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <app-products-list [id]="id"></app-products-list>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

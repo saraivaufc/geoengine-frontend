@@ -18,9 +18,9 @@ const routes: Routes = [
     {path: 'about'​, component​: AboutComponent},
     {path: 'sign-up', component: SignUpComponent},
     {path​: 'regions'​, component​: RegionListComponent},
-    {path: 'regions/:id', component: RegionViewComponent},
-    {path: 'add-region', component: RegionFormComponent},
-    {path: 'edit-region/:id', component: RegionFormComponent},
+    {path: 'regions/view/:id', component: RegionViewComponent},
+    {path: 'regions/add', component: RegionFormComponent},
+    {path: 'regions/edit/:id', component: RegionFormComponent},
 ];
 
 @NgModule({

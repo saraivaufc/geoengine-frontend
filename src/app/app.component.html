@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<!-- Page Wrapper -->
+<div id="wrapper">
+    <app-sidebar></app-sidebar>
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <app-header></app-header>
+
+        <!-- Main Content -->
+        <div id="content">
+            <router-outlet></router-outlet>
+        </div>
+
+        <app-footer></app-footer>
+
+    </div>
+<!-- End of Content Wrapper -->
+</div>

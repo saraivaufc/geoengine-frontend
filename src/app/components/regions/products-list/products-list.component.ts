@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ApiService} from '../../../providers/api.service';
 import {environment} from 'src/environments/environment';
+import {timer} from 'rxjs';
 
 @Component({
     selector: 'app-products-list',
@@ -27,9 +28,10 @@ export class ProductsListComponent implements OnInit {
 
     ngOnInit() {
         this.loading = true;
-        timer(0, 10000).subscribe(t => {
-            this.getProductsByRegion(this.id);
-        });
+        this.getProductsByRegion(this.id);
+        // timer(0, 10000).subscribe(t => {
+        //
+        // });
     }
 
     public getProductsByRegion(id) {

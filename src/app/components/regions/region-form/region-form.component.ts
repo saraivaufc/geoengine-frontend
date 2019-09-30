@@ -27,15 +27,16 @@ export class RegionFormComponent implements OnInit {
         private router: Router
     ) {
         route.params.subscribe(params => {
-            this.id = this.id ? this.id : Number(params['id']);
+            this.id = this.id ? this.id : params['id'];
             if (this.id !== undefined) {
                 this.loadRegion(this.id);
+            } else {
+                this.id = null;
             }
         });
     }
 
     ngOnInit() {
-
     }
 
     loadRegion(id) {

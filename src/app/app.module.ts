@@ -37,6 +37,8 @@ import {MapComponent} from './components/map/map.component';
 import {RegionTimeseriesComponent} from './components/regions/region-timeseries/region-timeseries.component';
 import {RegionWeathForecastComponent} from './components/regions/region-weath-forecast/region-weath-forecast.component';
 import {RegionMonitoringComponent} from './components/regions/region-monitoring/region-monitoring.component';
+import {SidebarComponent} from './components/sidebar/sidebar.component';
+import { MapViewerComponent } from './components/map-viewer/map-viewer.component';
 
 @Pipe({
     name: 'safe'
@@ -72,6 +74,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         HeaderComponent,
         FooterComponent,
         CarouselComponent,
+        SidebarComponent,
 
         // components - regions
 
@@ -101,6 +104,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         RegionWeathForecastComponent,
 
         RegionMonitoringComponent,
+
+        MapViewerComponent,
     ],
     imports: [
         BrowserModule,

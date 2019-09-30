@@ -1,18 +1,10 @@
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
+    height: 100%;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 #sidebar.active {
     margin-left: -250px;
-}
-
-#sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {

@@ -17,6 +17,7 @@ declare var ol: any;
 })
 export class MapComponent implements OnInit, OnChanges {
     @Input() inputField;
+    @Input() editor = false;
     @Output() outputField = new EventEmitter();
 
     private map: any;
@@ -144,24 +145,25 @@ export class MapComponent implements OnInit, OnChanges {
             source: this.editLayer.getSource()
         });
 
-        editor.addControls([
-            cad,
-            draw,
-            drawLine,
-            drawPoly,
-            modify,
-            move,
-            rotate,
-            deleteC,
-            buffer,
-            union,
-            intersection,
-            difference
-        ]);
+        if (this.editor) {
+            editor.addControls([
+                cad,
+                draw,
+                drawLine,
+                drawPoly,
+                modify,
+                move,
+                rotate,
+                deleteC,
+                buffer,
+                union,
+                intersection,
+                difference
+            ]);
 
-        const ls = new ole.service.LocalStorage();
-
-        editor.addService(ls);
+            const ls = new ole.service.LocalStorage();
+            editor.addService(ls);
+        }
 
         this.source.on('addfeature', (event) => {
             let feature = event.feature;

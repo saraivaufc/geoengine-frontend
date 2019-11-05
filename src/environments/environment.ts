@@ -4,12 +4,16 @@
 
 export const environment = {
     production: false,
+    auth: {
+        client_id: 'TgfzKnuv17whL1M45KIQym0jF1lAqXgtty2Sfw3c',
+        redirectUrl: 'http://127.0.0.1:4200',
+    },
     items_per_page: 10,
     base_endpoint: 'http://localhost:8000',
     endpoints: {
-        auth: 'authentication:login',
-        regions: 'monitor:regions_create_list',
-        regions_details: 'monitor:regions_retrieve_update_destroy',
+        token: 'oauth2Provider:token',
+        fields: 'monitor:fields_create_list',
+        regions_details: 'monitor:fields_retrieve_update_destroy',
         products: 'monitor:products_list',
         tasks: 'services:tasks_list',
         tasks_details: 'services:tasks_details'

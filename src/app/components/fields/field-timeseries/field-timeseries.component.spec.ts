@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegionListComponent } from './region-list.component';
+import { FieldTimeseriesComponent } from './field-timeseries.component';
 
-describe('RegionListComponent', () => {
-  let component: RegionListComponent;
-  let fixture: ComponentFixture<RegionListComponent>;
+describe('FieldTimeseriesComponent', () => {
+  let component: FieldTimeseriesComponent;
+  let fixture: ComponentFixture<FieldTimeseriesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegionListComponent ]
+      declarations: [ FieldTimeseriesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RegionListComponent);
+    fixture = TestBed.createComponent(FieldTimeseriesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

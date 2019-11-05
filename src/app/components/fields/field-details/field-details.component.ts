@@ -12,11 +12,11 @@ import {getCenter} from 'ol/extent.js';
 declare const ol;
 
 @Component({
-    selector: 'app-region-details',
-    templateUrl: './region-details.component.html',
-    styleUrls: ['./region-details.component.css']
+    selector: 'app-field-details',
+    templateUrl: './field-details.component.html',
+    styleUrls: ['./field-details.component.css']
 })
-export class RegionDetailsComponent implements OnInit {
+export class FieldDetailsComponent implements OnInit {
 
     @Input() id: string;
 

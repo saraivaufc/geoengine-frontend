@@ -5,11 +5,11 @@ import {environment} from 'src/environments/environment';
 import {ApiService} from '../../../providers/api.service';
 
 @Component({
-    selector: 'app-region-form',
-    templateUrl: './region-form.component.html',
-    styleUrls: ['./region-form.component.css'],
+    selector: 'app-field-form',
+    templateUrl: './field-form.component.html',
+    styleUrls: ['./field-form.component.css'],
 })
-export class RegionFormComponent implements OnInit {
+export class FieldFormComponent implements OnInit {
     private id: number;
 
     form = new FormGroup({
@@ -66,17 +66,17 @@ export class RegionFormComponent implements OnInit {
             this.apiService.patch(environment.endpoints.regions_details, {pk: this.id}, region).subscribe(
                 response => {
                     console.log(response);
-                    this.router.navigate([`/regions/${response.id}`]);
+                    this.router.navigate([`/fields/view/${response.id}`]);
                 },
                 error => {
                     console.log(error);
                 }
             );
         } else {
-            this.apiService.post(environment.endpoints.regions, {}, region).subscribe(
+            this.apiService.post(environment.endpoints.fields, {}, region).subscribe(
                 response => {
                     console.log(response);
-                    this.router.navigate([`/regions/${response.id}`]);
+                    this.router.navigate([`/fields/view/${response.id}`]);
                 },
                 error => {
                     console.log(error);

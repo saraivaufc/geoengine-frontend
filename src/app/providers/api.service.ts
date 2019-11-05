@@ -21,14 +21,6 @@ export class ApiService {
     ) {
     }
 
-    public login(email, password): Observable<any> {
-        const url = this.getUrl(environment.endpoints.auth, {});
-        return this.http.post<any>(url, {
-            username: email,
-            password: password
-        });
-    }
-
     public getHeader(type = '') {
         return {
             headers: new HttpHeaders({
@@ -59,6 +51,15 @@ export class ApiService {
         console.log(urlParams);
         console.log(url);
         return this.http.post<any>(url, object, this.getHeader()).pipe(catchError(this.handleError(endpoint)));
+    }
+
+    public postUrlEncoded(endpoint, urlParams, object) {
+        const url = this.getUrl(endpoint, urlParams);
+        const headers = new HttpHeaders({'Content-Type': 'application/X-www-form-urlencoded'});
+
+        console.log(headers);
+
+        return this.http.post(url, object, {headers: headers} ).pipe(catchError(this.handleError(endpoint)));
     }
 
     public patch(endpoint, urlParams, object) {

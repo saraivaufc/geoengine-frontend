@@ -23,20 +23,19 @@ import {AboutComponent} from './components/about/about.component';
 import {MarketingCardComponent} from './components/marketing-card/marketing-card.component';
 import {BreadcrumbComponent} from './components/breadcrumb/breadcrumb.component';
 import {SignUpComponent} from './components/sign-up/sign-up.component';
-import {SignUpFormComponent} from './components/sign-up-form/sign-up-form.component';
 
-import {RegionListComponent} from './components/regions/region-list/region-list.component';
-import {RegionFormComponent} from './components/regions/region-form/region-form.component';
-import {RegionDetailsComponent} from './components/regions/region-details/region-details.component';
-import {RegionViewComponent} from './components/regions/region-view/region-view.component';
+import {FieldListComponent} from './components/fields/field-list/field-list.component';
+import {FieldFormComponent} from './components/fields/field-form/field-form.component';
+import {FieldDetailsComponent} from './components/fields/field-details/field-details.component';
+import {FieldViewComponent} from './components/fields/field-view/field-view.component';
 
-import {ProductsListComponent} from './components/regions/products-list/products-list.component';
-import {ProductsItemComponent} from './components/regions/products-item/products-item.component';
+import {ProductsListComponent} from './components/fields/products-list/products-list.component';
+import {ProductsItemComponent} from './components/fields/products-item/products-item.component';
 
 import {MapComponent} from './components/map/map.component';
-import {RegionTimeseriesComponent} from './components/regions/region-timeseries/region-timeseries.component';
-import {RegionWeathForecastComponent} from './components/regions/region-weath-forecast/region-weath-forecast.component';
-import {RegionMonitoringComponent} from './components/regions/region-monitoring/region-monitoring.component';
+import {FieldTimeseriesComponent} from './components/fields/field-timeseries/field-timeseries.component';
+import {FieldWeathForecastComponent} from './components/fields/field-weath-forecast/field-weath-forecast.component';
+import {FieldMonitoringComponent} from './components/fields/field-monitoring/field-monitoring.component';
 import {SidebarComponent} from './components/sidebar/sidebar.component';
 import { MapViewerComponent } from './components/map-viewer/map-viewer.component';
 
@@ -76,10 +75,10 @@ export function HttpLoaderFactory(http: HttpClient) {
         CarouselComponent,
         SidebarComponent,
 
-        // components - regions
+        // components - fields
 
-        RegionListComponent,
-        RegionFormComponent,
+        FieldListComponent,
+        FieldFormComponent,
 
         // components - home page
 
@@ -90,20 +89,19 @@ export function HttpLoaderFactory(http: HttpClient) {
         ProductsListComponent,
         ProductsItemComponent,
         SignUpComponent,
-        SignUpFormComponent,
 
-        RegionListComponent,
-        RegionDetailsComponent,
-        RegionFormComponent,
-        RegionViewComponent,
+        FieldListComponent,
+        FieldDetailsComponent,
+        FieldFormComponent,
+        FieldViewComponent,
 
         MapComponent,
 
-        RegionTimeseriesComponent,
+        FieldTimeseriesComponent,
 
-        RegionWeathForecastComponent,
+        FieldWeathForecastComponent,
 
-        RegionMonitoringComponent,
+        FieldMonitoringComponent,
 
         MapViewerComponent,
     ],

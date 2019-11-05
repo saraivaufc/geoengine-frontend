@@ -29,15 +29,15 @@ export class ProductsListComponent implements OnInit {
     ngOnInit() {
         this.loading = true;
         this.getProductsByRegion(this.id);
-        // timer(0, 10000).subscribe(t => {
-        //
-        // });
+        timer(0, 10000).subscribe(t => {
+            this.getProductsByRegion(this.id);
+        });
     }
 
     public getProductsByRegion(id) {
         const tags = this.tags.filter(tag => tag.checked).reduce((acc, tag) => acc + ',' + tag.value, '');
 
-        this.apiService.get(environment.endpoints.products, {'region_pk': id}, {'tags': tags}).subscribe(
+        this.apiService.get(environment.endpoints.products, {'field_pk': id}, {'tags': tags}).subscribe(
             response => {
                 this.products = this.groupProducts(response.results.filter(product => product.image !== null));
                 console.log(this.products);
@@ -63,6 +63,7 @@ export class ProductsListComponent implements OnInit {
         console.log(groupedProducts);
 
         const sorted = [];
+        // tslint:disable-next-line:forin
         for (const key in groupedProducts) {
             if (sorted[groupedProducts[key]['date_acquired']] === undefined) {
                 sorted[groupedProducts[key]['date_acquired']] = [];

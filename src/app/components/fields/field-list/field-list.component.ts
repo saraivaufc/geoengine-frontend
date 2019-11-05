@@ -4,13 +4,13 @@ import {timer} from 'rxjs';
 import {environment} from 'src/environments/environment';
 
 @Component({
-    selector: 'app-region-list',
-    templateUrl: './region-list.component.html',
-    styleUrls: ['./region-list.component.css']
+    selector: 'app-field-list',
+    templateUrl: './field-list.component.html',
+    styleUrls: ['./field-list.component.css']
 })
-export class RegionListComponent implements OnInit {
+export class FieldListComponent implements OnInit {
 
-    private regions: Array<object> = [];
+    private fields: Array<object> = [];
     private loading: boolean;
 
     constructor(
@@ -28,10 +28,10 @@ export class RegionListComponent implements OnInit {
 
     public getRegions() {
         this.loading = true;
-        this.apiService.get(environment.endpoints.regions, {}).subscribe(
+        this.apiService.get(environment.endpoints.fields, {}).subscribe(
             response => {
                 console.log(response.results);
-                this.regions = response.results.features;
+                this.fields = response.results.features;
                 this.loading = false;
             },
             error => {

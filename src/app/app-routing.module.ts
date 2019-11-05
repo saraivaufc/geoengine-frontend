@@ -7,9 +7,9 @@ import {PrivacyComponent} from './components/privacy/privacy.component';
 import {TermsComponent} from './components/terms/terms.component';
 
 import {SignUpComponent} from './components/sign-up/sign-up.component';
-import {RegionListComponent} from './components/regions/region-list/region-list.component';
-import {RegionFormComponent} from './components/regions/region-form/region-form.component';
-import {RegionViewComponent} from './components/regions/region-view/region-view.component';
+import {FieldListComponent} from './components/fields/field-list/field-list.component';
+import {FieldFormComponent} from './components/fields/field-form/field-form.component';
+import {FieldViewComponent} from './components/fields/field-view/field-view.component';
 
 const routes: Routes = [
     {path​: ''​, component​: HomeComponent},
@@ -17,10 +17,10 @@ const routes: Routes = [
     {path​: 'terms'​, component​: TermsComponent},
     {path: 'about'​, component​: AboutComponent},
     {path: 'sign-up', component: SignUpComponent},
-    {path​: 'regions'​, component​: RegionListComponent},
-    {path: 'regions/view/:id', component: RegionViewComponent},
-    {path: 'regions/add', component: RegionFormComponent},
-    {path: 'regions/edit/:id', component: RegionFormComponent},
+    {path​: 'fields'​, component​: FieldListComponent},
+    {path: 'fields/view/:id', component: FieldViewComponent},
+    {path: 'fields/add', component: FieldFormComponent},
+    {path: 'fields/edit/:id', component: FieldFormComponent},
 ];
 
 @NgModule({

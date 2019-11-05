@@ -5,11 +5,11 @@ import {environment} from '../../../../environments/environment';
 import {GeoJSON} from 'ol/format';
 
 @Component({
-    selector: 'app-region-view',
-    templateUrl: './region-view.component.html',
-    styleUrls: ['./region-view.component.css']
+    selector: 'app-field-view',
+    templateUrl: './field-view.component.html',
+    styleUrls: ['./field-view.component.css']
 })
-export class RegionViewComponent implements OnInit {
+export class FieldViewComponent implements OnInit {
     private id: number;
     private region: any;
     private centroid: any = [0, 0];

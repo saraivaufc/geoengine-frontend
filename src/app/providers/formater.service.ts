@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import {Injectable} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Injectable({
 	providedIn: 'root'
@@ -8,7 +8,8 @@ export class FormaterService {
 
 	constructor(
 		public translate: TranslateService
-	) { }
+	) {
+	}
 
 	public textToKeyLang(text: string) {
 		let arr = text.split(' ');
@@ -16,7 +17,7 @@ export class FormaterService {
 	}
 
 	public onlyLetters(text: string) {
-		return text.replace(/[^a-zA-Z ]/g, "");
+		return text.replace(/[^a-zA-Z ]/g, '');
 	}
 
 	public dictParamsToQuerystring(dict) {
@@ -24,7 +25,9 @@ export class FormaterService {
 	}
 
 	public querystringToJson(url) {
-		let params = url.split('?')[1].split('&').map(item => { return item.split('=') } );
+		let params = url.split('?')[1].split('&').map(item => {
+			return item.split('=');
+		});
 		let json = {};
 		params.forEach(param => {
 			json[param[0]] = param[1];

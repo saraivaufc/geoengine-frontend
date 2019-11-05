@@ -6,11 +6,11 @@ import Plotly from 'plotly.js-dist';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-region-timeseries',
-    templateUrl: './region-timeseries.component.html',
-    styleUrls: ['./region-timeseries.component.css']
+    selector: 'app-field-timeseries',
+    templateUrl: './field-timeseries.component.html',
+    styleUrls: ['./field-timeseries.component.css']
 })
-export class RegionTimeseriesComponent implements OnInit {
+export class FieldTimeseriesComponent implements OnInit {
     @Input() id: string;
     @Input() title: string;
     @Input() params: any;
@@ -121,7 +121,7 @@ export class RegionTimeseriesComponent implements OnInit {
     }
 
     public loadCharts() {
-        let data = [];
+        const data = [];
 
         console.log('************************************');
 

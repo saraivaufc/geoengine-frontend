@@ -39,15 +39,18 @@
             <h1 *ngIf="loading">Loading...</h1>
             <div class="scrollmenu">
                 <div class="item" *ngFor="let group of products | keyvalue">
-                    <div  *ngFor="let product of group.value">
-                        <button type="button" class="btn btn-info">
-                            <i class="fa fa-calendar-alt"></i>
-                            {{ product.image.date_acquired  }}
-                        </button>
-                        <button type="button" class="btn btn-warning">
-                            <i class="fa fa-satellite"></i>
-                            {{ product.image.satellite.code  }}
-                        </button>
+                    <div class="m-1" *ngFor="let product of group.value">
+                        <div class="card-header text-black-50">
+                            <label style="float: left">
+                                <i class="fa fa-calendar-alt"></i>
+                                {{ product.image.date_acquired  }}
+                            </label>
+                            <label></label>
+                            <label style="float: right">
+                                <i class="fa fa-satellite"></i>
+                                {{ product.image.satellite.code  }}
+                            </label>
+                        </div>
                         <app-products-item class="m-0 p-0" *ngIf="product['NATURAL_COLOR']" [product]="product['NATURAL_COLOR']"></app-products-item>
                         <app-products-item class="m-0 p-0" *ngIf="product['FALSE_COLOR']" [product]="product['FALSE_COLOR']"></app-products-item>
                         <app-products-item class="m-0 p-0" *ngIf="product['NDVI']" [product]="product['NDVI']"></app-products-item>

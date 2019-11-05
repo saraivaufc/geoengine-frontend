@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegionFormComponent } from './region-form.component';
+import { FieldMonitoringComponent } from './field-monitoring.component';
 
-describe('RegionFormComponent', () => {
-  let component: RegionFormComponent;
-  let fixture: ComponentFixture<RegionFormComponent>;
+describe('FieldMonitoringComponent', () => {
+  let component: FieldMonitoringComponent;
+  let fixture: ComponentFixture<FieldMonitoringComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegionFormComponent ]
+      declarations: [ FieldMonitoringComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RegionFormComponent);
+    fixture = TestBed.createComponent(FieldMonitoringComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

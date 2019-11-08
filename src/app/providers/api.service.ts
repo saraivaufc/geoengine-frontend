@@ -59,7 +59,7 @@ export class ApiService {
 
         console.log(headers);
 
-        return this.http.post(url, object, {headers: headers} ).pipe(catchError(this.handleError(endpoint)));
+        return this.http.post(url, object, {headers: headers}).pipe(catchError(this.handleError(endpoint)));
     }
 
     public patch(endpoint, urlParams, object) {

@@ -10,9 +10,9 @@ import {GeoJSON} from 'ol/format';
     styleUrls: ['./field-view.component.css']
 })
 export class FieldViewComponent implements OnInit {
-    private id: number;
-    private region: any;
-    private centroid: any = [0, 0];
+    id: number;
+    region: any;
+    centroid: any = [0, 0];
 
     constructor(
         private route: ActivatedRoute,

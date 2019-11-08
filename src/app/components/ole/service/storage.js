@@ -44,7 +44,7 @@ export default class Storage extends Service {
       control.addEventListener('propertychange', (evt) => {
         this.storeProperties(
           evt.detail.control.getProperties().title,
-          evt.detail.properties,
+          evt.detail.properties
         );
       });
 

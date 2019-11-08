@@ -20,12 +20,12 @@ export class MapComponent implements OnInit, OnChanges {
     @Input() editor = false;
     @Output() outputField = new EventEmitter();
 
-    private map: any;
-    private editLayer: any;
-    private source: any;
-    private vector: any;
-    private draw: any;
-    private snap: any;
+    map: any;
+    editLayer: any;
+    source: any;
+    vector: any;
+    draw: any;
+    snap: any;
 
     constructor() {
     }

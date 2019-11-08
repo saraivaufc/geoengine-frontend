@@ -1,21 +1,21 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+    selector: 'app-sidebar',
+    templateUrl: './sidebar.component.html',
+    styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  private toggled = false;
+    toggled = false;
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
-  public toggleSidebar() {
-    this.toggled = !this.toggled;
-  }
+    public toggleSidebar() {
+        this.toggled = !this.toggled;
+    }
 
 }

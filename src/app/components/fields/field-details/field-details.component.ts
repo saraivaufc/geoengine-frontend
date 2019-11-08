@@ -20,10 +20,10 @@ export class FieldDetailsComponent implements OnInit {
 
     @Input() id: string;
 
-    private region: any;
-    private map: any;
-    private source: any;
-    private vector: any;
+    region: any;
+    map: any;
+    source: any;
+    vector: any;
 
     constructor(private apiService: ApiService) {
     }

@@ -18,25 +18,25 @@ export class FieldTimeseriesComponent implements OnInit {
     @Input() startDate = '2016-01-01';
     @Input() endDate = new Date().toISOString().slice(0, 10);
 
-    private region: any;
+    region: any;
 
-    private vegetationIndexParams = {
+    vegetationIndexParams = {
         collection: 'MODIS/006/MOD13Q1',
         bands: ['NDVI'],
         reducers: ['median'],
     };
-    private vegetationIndexSeries = null;
+    vegetationIndexSeries = null;
 
-    private precipitationParams = {
+    precipitationParams = {
         collection: 'UCSB-CHG/CHIRPS/DAILY',
         start_date: this.startDate,
         end_date: this.endDate,
         bands: ['precipitation'],
         reducers: ['median'],
     };
-    private precipitationSeries = null;
+    precipitationSeries = null;
 
-    private chartLoaded = false;
+    chartLoaded = false;
 
     constructor(public apiService: ApiService,
                 public translate: TranslateService) {

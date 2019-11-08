@@ -10,7 +10,7 @@ export class FieldWeathForecastComponent implements OnInit {
     @Input() lat: any;
     @Input() lon: any;
 
-    private url: any;
+    url: any;
 
     constructor() {
     }

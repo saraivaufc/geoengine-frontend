@@ -14,9 +14,9 @@ export class MapViewerComponent implements AfterViewInit {
     @Input() geometry;
     @Input() zoom;
 
-    private map: any;
-    private editLayer: any;
-    private source: any;
+    map: any;
+    editLayer: any;
+    source: any;
 
     constructor() {
     }
@@ -58,9 +58,9 @@ export class MapViewerComponent implements AfterViewInit {
                 center: [-5601471, -1525532],
                 zoom: 4,
             }),
-            controls : ol.control.defaults({
-                attribution : false,
-                zoom : false,
+            controls: ol.control.defaults({
+                attribution: false,
+                zoom: false,
             }),
         });
 

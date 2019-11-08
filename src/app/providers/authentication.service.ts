@@ -1,8 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {User} from '../models/user.model';
-import {Observable} from 'rxjs';
-import {environment} from '../../environments/environment';
 import {ApiService} from './api.service';
 
 @Injectable({
@@ -13,7 +11,7 @@ export class AuthenticationService {
         console.log(User);
     }
 
-    public login(code){
+    public login(code) {
         // return this.apiService.postUrlEncoded(environment.endpoints.token, {}, {
         //     'grant_type': 'authorization_code',
         //     'code': code,

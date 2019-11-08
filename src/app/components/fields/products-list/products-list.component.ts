@@ -12,8 +12,8 @@ export class ProductsListComponent implements OnInit {
 
     @Input() id: number;
 
-    private products: any = new Map();
-    private tags: Array<any> = [
+    products: any = new Map();
+    tags: Array<any> = [
         {label: 'Natural Color', value: 'NATURAL_COLOR', checked: false},
         {label: 'False Color', value: 'FALSE_COLOR', checked: false},
         {label: 'NDVI', value: 'NDVI', checked: true},
@@ -21,7 +21,7 @@ export class ProductsListComponent implements OnInit {
         {label: 'Surface Temperature', value: 'SURFACE_TEMPERATURE', checked: false}
     ];
 
-    private loading: boolean;
+    loading: boolean;
 
     constructor(private apiService: ApiService) {
     }

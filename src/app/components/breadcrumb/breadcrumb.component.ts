@@ -1,16 +1,18 @@
-import { Component, OnInit, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-breadcrumb',
-  templateUrl: './breadcrumb.component.html',
-  styleUrls: ['./breadcrumb.component.css']
+    selector: 'app-breadcrumb',
+    templateUrl: './breadcrumb.component.html',
+    styleUrls: ['./breadcrumb.component.css']
 })
 export class BreadcrumbComponent implements OnInit {
-	@Input()​ items: Array<object>;
-	
-	constructor() { }
+@Input()​
+    items: Array<object>;
 
-	ngOnInit() {
-	}
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }

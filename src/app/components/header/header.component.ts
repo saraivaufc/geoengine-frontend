@@ -1,8 +1,7 @@
-import {AfterContentChecked, AfterViewInit, Component, Input, OnInit} from '@angular/core';
+import {AfterContentChecked, Component, Input, OnInit} from '@angular/core';
 import {AuthenticationService} from '../../providers/authentication.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {environment} from '../../../environments/environment';
-import {HttpParams} from '@angular/common/http';
 import {skip} from 'rxjs/operators';
 
 @Component({
@@ -12,7 +11,7 @@ import {skip} from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit, AfterContentChecked {
     @Input() activePage: string;
-    private isAuthenticated = false;
+    isAuthenticated = false;
 
     constructor(private authenticationService: AuthenticationService,
                 private router: Router,
@@ -28,7 +27,7 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
             return;
         } else {
             this.activatedRoute.queryParams.pipe(skip(1)).subscribe(params => {
-                let code = params['code'];
+                const code = params['code'];
                 alert(code); // Print the parameter to the console.
 
                 if (code) {

@@ -78,14 +78,14 @@ class RotateControl extends Control {
     if (this.center && this.feature) {
       this.feature.set(
         this.rotateAttribute,
-        this.feature.get(this.rotateAttribute) || 0,
+        this.feature.get(this.rotateAttribute) || 0
       );
 
       // rotation between clicked coordinate and feature center
       this.initialRotation =
         Math.atan2(
           evt.coordinate[1] - this.center[1],
-          evt.coordinate[0] - this.center[0],
+          evt.coordinate[0] - this.center[0]
         ) + this.feature.get(this.rotateAttribute);
     }
 
@@ -107,7 +107,7 @@ class RotateControl extends Control {
     if (this.feature && this.center) {
       const rotation = Math.atan2(
         evt.coordinate[1] - this.center[1],
-        evt.coordinate[0] - this.center[0],
+        evt.coordinate[0] - this.center[0]
       );
 
       const rotationDiff = this.initialRotation - rotation;

@@ -10,7 +10,7 @@ import {ApiService} from '../../../providers/api.service';
     styleUrls: ['./field-form.component.css'],
 })
 export class FieldFormComponent implements OnInit {
-    private id: number;
+    id: number;
 
     form = new FormGroup({
         crop_type: new FormControl('', [Validators.required]),

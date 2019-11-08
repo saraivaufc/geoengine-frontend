@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-    private regionsCount: Number = null;
+    regionsCount: Number = null;
 
     constructor(
         private apiService: ApiService

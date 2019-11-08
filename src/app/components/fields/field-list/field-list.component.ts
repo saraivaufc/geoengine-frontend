@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from '../../../providers/api.service';
-import {timer} from 'rxjs';
 import {environment} from 'src/environments/environment';
 
 @Component({
@@ -10,8 +9,8 @@ import {environment} from 'src/environments/environment';
 })
 export class FieldListComponent implements OnInit {
 
-    private fields: Array<object> = [];
-    private loading: boolean;
+    fields: Array<object> = [];
+    loading: boolean;
 
     constructor(
         private apiService: ApiService

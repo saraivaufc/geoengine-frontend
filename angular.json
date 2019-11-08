@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "site": {
+    "geoengine-frontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/site",
+            "outputPath": "dist/geoengine-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "site:build"
+            "browserTarget": "geoengine-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "site:build:production"
+              "browserTarget": "geoengine-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "site:build"
+            "browserTarget": "geoengine-frontend:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "site-e2e": {
+    "geoengine-frontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -118,7 +118,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "site:serve:production"
+              "devServerTarget": "geoengine-frontend:serve:production"
             }
           }
         },

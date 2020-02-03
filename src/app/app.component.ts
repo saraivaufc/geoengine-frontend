@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {Router} from '@angular/router';
+import {CanActivate} from '@angular/router/src/utils/preactivation';
 
 declare var ol: any;
 declare var jsts: any;
@@ -15,9 +17,7 @@ export class AppComponent {
     title = 'site';
     lang = 'pt-br';
 
-    constructor(
-        private translate: TranslateService,
-    ) {
+    constructor(private translate: TranslateService, private router: Router) {
         translate.setDefaultLang('pt-br');
         this.setLang(localStorage.CONFIG_LANG ? localStorage.CONFIG_LANG : this.lang);
     }

@@ -4,6 +4,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
+## Project Structure based on this [post](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7)
+
 ## Install Node
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash

@@ -5,7 +5,7 @@
 export const environment = {
   production: true,
   auth: {
-    client_id: 'TgfzKnuv17whL1M45KIQym0jF1lAqXgtty2Sfw3c',
+    clientId: 'TgfzKnuv17whL1M45KIQym0jF1lAqXgtty2Sfw3c',
     redirectUrl: 'http://127.0.0.1:4200',
   },
   items_per_page: 10,

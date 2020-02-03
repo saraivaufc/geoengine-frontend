@@ -1,0 +1,52 @@
+<!-- Sidebar -->
+<ul id="sidebar" class="navbar-nav sidebar accordion" [class.toggled]="!toggled">
+
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" routerLink="/">
+    <div class="sidebar-brand-icon p-2">
+      <img src="/assets/images/logo.png" width="40px">
+      <span class="align-middle p-1">GeoEngine</span>
+    </div>
+  </a>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
+
+  <!-- Nav Item - Home -->
+  <li class="nav-item active" *ngIf="!visible">
+    <a class="nav-link" routerLink="/">
+      <i class="fas fa-fw fa-home"></i>
+      <span [textContent]="'Home' | translate"></span></a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider" *ngIf="visible">
+
+<!--  &lt;!&ndash; Heading &ndash;&gt;-->
+<!--  <div class="sidebar-heading">-->
+<!--    {{ 'Dashboard' | translate }}-->
+<!--  </div>-->
+
+  <li class="nav-item active" *ngIf="visible">
+    <a class="nav-link" routerLink="dashboard">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span [textContent]="'Dashboard' | translate"></span></a>
+  </li>
+
+  <!-- Nav Item - Charts -->
+  <li class="nav-item" *ngIf="visible">
+    <a class="nav-link" routerLink="/dashboard/fields">
+      <i class="fas fa-fw fa-draw-polygon"></i>
+      <span [textContent]="'Fields' | translate"></span></a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle" (click)="toggleSidebar();"></button>
+  </div>
+
+</ul>
+<!-- End of Sidebar -->

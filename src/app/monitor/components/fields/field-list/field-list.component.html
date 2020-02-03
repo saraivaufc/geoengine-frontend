@@ -1,0 +1,48 @@
+<app-breadcrumb [items]="[
+	['Home', '/'],
+	['Dashboard', '/dashboard'],
+	['Fields', '/dashboard/fields']
+    ]"></app-breadcrumb>
+
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800" [textContent]="'Monitored Fields' | translate"></h1>
+        <a routerLink="/dashboard/fields/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            <i class="fa fa-plus" [textContent]=" 'New Field' | translate"></i>
+        </a>
+    </div>
+
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary" [textContent]="'Fields'"></h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover" id="dataTable">
+                    <thead>
+                        <th>#Id</th>
+                        <th>Image</th>
+                        <th>Crop type</th>
+                        <th>Planting date</th>
+                        <th>Harvest date</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let fields of fields">
+                            <td>
+                                <a [routerLink]="['/dashboard/fields/view/', fields.id]">{{ fields.id }}</a>
+                            </td>
+                            <td style="width: 150px;">
+                                <app-map-viewer [id]="fields.id" [geometry]="fields.geometry" [zoom]="12"></app-map-viewer>
+                            </td>
+                            <td>{{ fields.properties.crop_type }}</td>
+                            <td>{{ fields.properties.planting_date }}</td>
+                            <td>{{ fields.properties.harvest_date }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
